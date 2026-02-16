@@ -1,44 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Gio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #0056b3;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Giovani Pereira Macedo</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 32px 28px;
+      box-sizing: border-box;
+    }
+
+    .header {
+      border-bottom: 2px solid #111;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .contact {
+      margin: 8px 0 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .contact + .contact {
+      margin-top: 6px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .skills div {
+      margin-bottom: 6px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .skills div:last-child {
+      margin-bottom: 0;
+    }
+
+    .job {
+      margin-bottom: 16px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .job-company {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* impressão bonitinha */
+    @media print {
+      body {
+        background: #fff;
+      }
+      .page {
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Sobre Mim</h1>
-        <p>Olá! Meu nome é Giovani, mas você pode me chamar de Gio. Sou apaixonado por tecnologia e tenho um forte interesse em computadores, programação e desenvolvimento de software. Atualmente, estou cursando Ciência da Computação na Universidade Descomplica, onde tenho explorado áreas como Java, Angular e desenvolvimento web.</p>
+  <div class="page">
 
-        <p>Além dos estudos, trabalho em uma empresa de e-commerce, onde aplico meu conhecimento em construção e manutenção de sistemas. Minha experiência inclui reparos em telemóveis e montagem de computadores personalizados, sempre buscando aprender e evoluir no campo da tecnologia.</p>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Giovani Pereira Macedo</h1>
 
-        <p>Sou entusiasta de hardware, possuo uma GPU RX 580 8GB da Huananzhi e um processador Ryzen 5 4600G em meu setup. Fora isso, sou um grande admirador do Raspberry Pi, utilizando-o para diversos projetos pessoais, como criar uma central multimídia para streaming.</p>
+      <p class="contact">Rio de Janeiro, RJ | (21) 98055-2645</p>
 
-        <p>Se você compartilha algum desses interesses ou precisa de ajuda com tecnologia, estarei à disposição para colaborar!</p>
+      <p class="contact">
+        <span class="bold">Email:</span> giovanipmacedo@gmail.com
+        <span style="margin:0 10px;">|</span>
+        <span class="bold">LinkedIn:</span>
+        <a href="http://linkedin.com/in/eugiovaniii">linkedin.com/in/eugiovaniii</a>
+        <span style="margin:0 10px;">|</span>
+        <span class="bold">GitHub:</span>
+        <a href="http://github.com/eugiovaniii">github.com/eugiovaniii</a>
+      </p>
     </div>
+
+    <!-- RESUMO -->
+    <div class="section">
+      <h2>Resumo Profissional</h2>
+      <p>
+        Estudante de Ciência da Computação, com experiência em suporte a sistemas ERP, atendimento de
+        chamados, testes e validação de soluções, padronização de processos e treinamento de usuários.
+        Vivência em rotinas operacionais e administrativas, com foco em consistência de dados e melhoria
+        contínua. Interesse em desenvolvimento fullstack e automação de rotinas.
+      </p>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div class="section">
+      <h2>Habilidades Técnicas</h2>
+
+      <div class="skills">
+        <div><span class="bold">Suporte e rotinas:</span> ERP, chamados, testes funcionais, documentação, treinamento</div>
+        <div><span class="bold">Excel:</span> PROCV, tabela dinâmica</div>
+        <div><span class="bold">Linguagens:</span> Python, JavaScript</div>
+        <div><span class="bold">Web:</span> HTML, CSS, Bootstrap</div>
+        <div><span class="bold">Ferramentas:</span> Git</div>
+      </div>
+    </div>
+
+    <!-- EXPERIÊNCIA -->
+    <div class="section">
+      <h2>Experiência Profissional</h2>
+
+      <div class="job">
+        <p class="job-title">Estagiário de Suporte de Sistemas (ERP) – PMO</p>
+        <p class="job-company">Rock World | Mai/2025 – Nov/2025</p>
+        <ul>
+          <li>Suporte técnico ao ERP interno (HERA) e atendimento de chamados.</li>
+          <li>Organização e acompanhamento de demandas utilizando ferramentas de gestão de projetos.</li>
+          <li>Apoio na padronização e melhoria de processos internos do PMO.</li>
+          <li>Realização de testes e suporte na validação de ajustes e soluções no sistema.</li>
+          <li>Treinamento e suporte aos usuários para uso correto da plataforma.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Assistente de Compras</p>
+        <p class="job-company">Wizmart | Ago/2022 – Dez/2024</p>
+        <ul>
+          <li>Recebimento, conferência e lançamento de notas fiscais para o Centro de Distribuição.</li>
+          <li>Atualização e manutenção de cadastros e preços no sistema.</li>
+          <li>Acompanhamento de vendas, análise de relatórios e projeções de consumo e reposição.</li>
+          <li>Configuração e suporte operacional ao ERP, incluindo treinamento e padronização de rotinas.</li>
+          <li>Parametrização do sistema de compra autônoma dos PDVs.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Produtor de Credenciamento</p>
+        <p class="job-company">LIESA | Jan/2025 – Mar/2025</p>
+        <ul>
+          <li>Cadastro e validação de biometria facial do público do Carnaval do Rio.</li>
+          <li>Emissão de credenciais para diferentes perfis de acesso.</li>
+          <li>Ajustes técnicos e manutenção básica na impressora de credenciais.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CERTIFICAÇÕES -->
+    <div class="section">
+      <h2>Certificações e Cursos</h2>
+      <ul>
+        <li>Python Essentials 1 — Cisco</li>
+        <li>Fundamentos do Suporte Técnico — Coursera</li>
+        <li>Redes de Computadores — Cisco</li>
+        <li>Sistemas Operacionais — Coursera</li>
+      </ul>
+    </div>
+
+    <!-- FORMAÇÃO -->
+    <div class="section" style="margin-bottom:0;">
+      <h2>Formação</h2>
+      <p>
+        <span class="bold">Descomplica UniAmérica</span> — Ciência da Computação (Cursando) | 2023 – 2027
+      </p>
+    </div>
+
+  </div>
 </body>
 </html>
